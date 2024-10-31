@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator</title>
+    </head>
+    <header>
+        <h1>Kalkulator</h1>
+    </header>
+    <body>
+        <script>
+            document.write('Kalkulator: ');
+
+            let number1 = parseInt(prompt('Wprowadz pierwsza liczbe'))
+            let number2 = parseInt(prompt('Wprowadz drugą liczbe'))
+
+            if(isNaN(number1)) {
+                document.write(' Wpisz poprawnie pierwsza liczbe ')
+
+            }
+            if(isNaN(number2)) {
+                document.write(' Wpisz poprawnie druga liczbe ')
+            }
+            let dzialanie = (prompt('Jakie działanie chcesz wykonać? : + - * /'))
+
+            if(dzialanie == '+') {
+                document.write('Wynik:' (number1 + number2));
+            }
+            else if(dzialanie == '-') {
+                document.write('Wynik:' (number1 - number2));
+            }
+            else if(dzialanie == '*') {
+                document.write('Wynik:' (number1 * number2));
+            }
+            else if(dzialanie == '/') {
+                document.write('Wynik:' (number1 / number2));
+            }
+
+        </script>
+    </body>
+</html>
